@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body onload="init()">
+
+        <div align="center"> 
+            <form onsubmit="add(event)">
+            <h1 id="lbl">Student Records</h1>
+            <hr>
+            <h5>Add Student</h5>
+            <input type="text" class="box" placeholder="Roll number" id="rollbox" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" class="box" placeholder="Name" id="namebox" required>
+             &nbsp;&nbsp;&nbsp;&nbsp;
+             <select id="Branchbox"  required>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electronics and Communication">Electronics and Communication</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select>
+            <br><br>
+
+            <input type="number" class="box" placeholder="JavaScript Marks" id="jsbox" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" class="box" placeholder="Dbms Marks" id="dbmsbox" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <br><br>
+            <button>Add Student</button>
+            &nbsp;
+
+
+            <button type="button" onclick="Save()">Save</button>
+
+            </form>
+        </div>
+
+        <hr>
+        <table align="center" border="1" cellpadding="10" cellspacing="0">
+            <tbody id="tbody">
+            <tr>
+                <th>Roll number</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>JavaScript</th>
+                <th>Dbms</th>
+                <th>Total marks</th>
+                <th>Delete Records</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Ansh Jain</td>
+                <td>Computer Science</td>
+                <td>85</td>
+                <td>90</td>
+                <td>175</td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+        </table>
+    </body>
+    <script src="./code.js"></script>
+</html>
