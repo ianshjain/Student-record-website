@@ -37,8 +37,7 @@ Student-record-website:
 
 ## Author
 
-**ianshjain**  
-📍 [GitHub Profile](https://github.com/ianshjain)
+**ianshjain**  [GitHub Profile](https://github.com/ianshjain)
 
 If you found this project helpful, feel free to ⭐ the repository!
 
